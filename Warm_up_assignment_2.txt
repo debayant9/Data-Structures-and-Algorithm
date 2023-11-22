@@ -1,0 +1,29 @@
+1> Richest Customer Wealth 
+class Solution {
+public:
+    int maximumWealth(vector<vector<int>>& accounts) {
+        int max_sum = INT_MIN;
+        for(int i = 0; i < accounts.size(); ++i)
+        {
+            vector<int> cust_data = accounts[i];
+            max_sum = max(max_sum, accumulate(cust_data.begin(), cust_data.end(), 0));
+        }
+        return max_sum;
+    }
+};
+
+2> Running Sum of 1d array
+class Solution {
+public:
+    int maximumWealth(vector<vector<int>>& accounts) {
+        int max_sum = INT_MIN;
+        for(int i = 0; i < accounts.size(); ++i)
+        {
+            vector<int> cust_data = accounts[i];
+            max_sum = max(max_sum, accumulate(cust_data.begin(), cust_data.end(), 0));
+        }
+        return max_sum;
+    }
+};
+
+
